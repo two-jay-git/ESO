@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESO Set Information</title>
+<style>
+  /* Style for the tooltip */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* Style for the tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* Style for the tooltip text when visible */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+</style>
+</head>
+<body>
+
+<!-- Text to hover over -->
+<div class="tooltip" onmouseover="getSetInfo()">
+  Hover over me for set info
+  <!-- Tooltip text -->
+  <span class="tooltiptext" id="setInfo">Loading...</span>
+</div>
+
+<script>
+  function getSetInfo() {
+    // Make a request to eso-hub.com to get set information
+    fetch('https://www.eso-hub.com/api/item-set/search?name=YOUR_SET_NAME')
+      .then(response => response.json())
+      .then(data => {
+        // Display set information in the tooltip text
+        const setInfo = document.getElementById('setInfo');
+        if (data.length > 0) {
+          const setName = data[0].name;
+          const setBonus = data[0].bonuses.join('<br>');
+          setInfo.innerHTML = `<strong>${setName}</strong><br>${setBonus}`;
+        } else {
+          setInfo.innerHTML = "Set information not found";
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching set information:', error);
+        document.getElementById('setInfo').innerHTML = "Error fetching set information";
+      });
+  }
+</script>
+
+</body>
+</html>
