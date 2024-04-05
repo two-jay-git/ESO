@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESO Builds</title>
@@ -55,32 +48,43 @@
     .card a:hover {
       text-decoration: underline;
     }
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
 <h1>ESO Builds</h1>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="page1.html">Page 1</a>
+  <a href="page2.html">Page 2</a>
+</nav>
+
 <div class="container">
   <div class="card">
-    <img src="https://raw.githubusercontent.com/two-jay-git/react-gh-pages/main/my-app/src/Warden_Healer.png" alt="Warden Healer">
-    <h3>Warden Healer</h3>
-    <p>A Tanky Oakensoul Warden Healer with Amazing HOTS and Incredible Burst Healing. Stay by their side, if you don't want to die!</p>
-    <a href="https://en.uesp.net/wiki/Special:EsoBuildData?id=614878">View Build</a>
+    <img src="image1.jpg" alt="Image 1">
+    <h3>Card Title 1</h3>
+    <p>This is a description of the first card.</p>
+    <a href="page1.html">Learn More</a>
   </div>
 
   <div class="card">
-    <img src="https://raw.githubusercontent.com/two-jay-git/react-gh-pages/main/my-app/src/Templar_Healer.png" alt="Templar Healer">
-    <h3>Templar Healer</h3>
-    <p>An Ultimate Generating Oakensoul Heal Bot with almost no downtime on their Ultimate Ability. Not as Tanky, but the heals are incredible!</p>
-    <a href="https://en.uesp.net/wiki/Special:EsoBuildData?id=572497">View Build</a>
-  </div>
-
-  <div class="card">
-    <img src="https://raw.githubusercontent.com/two-jay-git/react-gh-pages/main/my-app/src/Nightblade_Healer.png" alt="Nightblade Healer">
-    <h3>Nightblade Healer</h3>
-    <p>A Super Tanky, but sneaky, Nightblade Healer with extreme Survivability and enough damage to steal kills from time to time. Don't let this healer catch you or you might die!</p>
-    <a href="https://en.uesp.net/wiki/Special:EsoBuildData?id=608146">View Build</a>
+    <img src="image2.jpg" alt="Image 2">
+    <h3>Card Title 2</h3>
+    <p>This is a description of the second card.</p>
+    <a href="page2.html">Learn More</a>
   </div>
   
   <!-- Add more cards as needed -->
