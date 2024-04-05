@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Image Popup</title>
+<style>
+  /* Style for the popup */
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Style for the popup image */
+  .popup .popup-img {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    z-index: 1;
+  }
+  
+  /* Style for the image displayed on hover */
+  .popup:hover .popup-img {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<!-- The text to hover over -->
+<div class="popup">
+  Hover over me
+  <!-- The image to display on hover -->
+  <img class="popup-img" src="https://eso-hub.com/en/sets/abyssal-brace" alt="Popup Image">
+</div>
+
+</body>
+</html>
