@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESO Builds</title>
-</head>
-<body>
-   <style>
+  <style>
     /* CSS for basic styling (same as previous code) */
     body {
       font-family: Arial, sans-serif;
@@ -16,7 +14,13 @@
     h1 {
       text-align: center;
     }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
     .card {
+      width: calc(33.33% - 20px); /* Adjust the width as needed */
       border: 1px solid #ddd;
       border-radius: 5px;
       padding: 10px;
@@ -28,7 +32,8 @@
       border-radius: 5px;
     }
     .card h3 {
-style={{ width: '200px', height: 'auto' }} // Custom resize
+      margin-top: 10px;
+      font-size: 20px;
     }
     .card p {
       margin-top: 10px;
@@ -46,26 +51,26 @@ style={{ width: '200px', height: 'auto' }} // Custom resize
   </style>
 </head>
 <body>
+
+<h1>ESO Builds</h1>
+
+<div class="container">
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/two-jay-git/react-gh-pages/main/my-app/src/Warden_Healer.png" alt="Warden Healer">
+    <h3>Warden Healer</h3>
+    <p>A Tanky Oakensoul Warden Healer with Amazing HOTS and Incredible Burst Healing. Stay by their side, if you don't want to die!</p>
+    <a href="https://en.uesp.net/wiki/Special:EsoBuildData?id=614878">View Build</a>
+  </div>
+
+  <div class="card">
+    <img src="image2.jpg" alt="Image 2">
+    <h3>Card Title 2</h3>
+    <p>This is a description of the second card.</p>
+    <a href="page2.html">Learn More</a>
+  </div>
   
-  <h1>ESO Builds</h1>
-
-          <div className="Build-card">
-            <h3>Warden Healer</h3>
-            <img src="https://raw.githubusercontent.com/two-jay-git/react-gh-pages/main/my-app/src/Warden_Healer.png"
-            style={{ width: '200px', height: 'auto' }} // Custom resize
-            />
-            <p>A Tanky Oakensoul Warden Healer with Amazing HOTS and Incredible Burst Healing. Stay by their side, if you don't want to die!</p>
-            <a href="https://en.uesp.net/wiki/Special:EsoBuildData?id=614878">View Build</a>
-          </div>
-
-<div class="card">
-  <img src="image2.jpg" alt="Image 2">
-  <h3>Card Title 2</h3>
-  <p>This is a description of the second card.</p>
-  <a href="page2.html">Learn More</a>
+  <!-- Add more cards as needed -->
 </div>
-
-<!-- Add more cards as needed -->
 
 </body>
 </html>
