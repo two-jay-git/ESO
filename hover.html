@@ -1,15 +1,77 @@
-<div class="set-tooltip-center">
-<h4 class="set-tooltip-setname">Abyssal Brace</h4>
-<strong>LEVEL 50 - CP 160</strong><br>
-<small>ESO-Hub.com</small>
-<div class="set-tooltip-seperator"></div>
-<div><span>Type</span> <strong>Dungeon</strong>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Image Popup</title>
+<style>
+  /* Style for the popup */
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Style for the popup image */
+  .popup .popup-img {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    z-index: 1;
+  }
+  
+  /* Style for the image displayed on click */
+  .popup.show .popup-img {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<!-- The text to click -->
+<div class="popup" onclick="toggleImage()">
+  Click me
+  <!-- The image to display on click -->
+  <img class="popup-img" src=<div class="eso_item_link_popup" style="top: 503.989px; left: 121.055px; display: none;"><div id="esoil_outeritembox">
+	<div id="esoil_itembox">
+		<div id="esoil_watermark">uesp.net</div>
+		<div id="esoil_itemstyle">Undaunted</div>
+		<img src="//esoicons.uesp.net/esoui/art/icons/gear_undauntedgargoyle_head_a.png" id="esoil_itemicon">
+		<div id="esoil_itemtype1">Armor</div>
+		<div id="esoil_itemtype2">Heavy</div>
+		<div id="esoil_itemstolen"></div>
+		<div id="esoil_itembindtype">Bind on Pickup</div>
+		<div id="esoil_itemname" class="esoil_quality_Legendary">BLOODSPAWN VISAGE</div>
+		<img src="//esolog-static.uesp.net/resources/eso_item_hr.png" id="esoil_item_hr">
+		<div id="esoil_datablock">
+			<div id="esoil_itemleftblock" style="display:inline-block;">ARMOR <div id="esoil_itemleft">2425</div></div>
+			<div id="esoil_itemlevelblock" style="display:inline-block;">LEVEL <div id="esoil_itemlevel">50</div></div>
+			<div id="esoil_itemrightblock" style="display:inline-block;"><img src="//esolog-static.uesp.net/resources/champion_icon.png" class="esoil_cpimg">CP<div id="esoil_itemlevel">160</div></div>
+		</div>
+		<div id="esoil_itembar" class=""><img src="//esolog-static.uesp.net/resources/eso_item_conditionbar.png" id="esoil_conditionbar"><img src="//esolog-static.uesp.net/resources/eso_item_barblack.png" id="esoil_conditionbar_coverleft" style="width: 112px;"><img src="//esolog-static.uesp.net/resources/eso_item_barblack.png" id="esoil_conditionbar_coverright" style="width: 112px;"></div>
+		<div id="esoil_itemabilityblock"></div>
+		<div id="esoil_itemtraitabilityblock"></div>
+		<div id="esoil_itemenchantblock"><div class="esoil_white esoil_small">MULTI-EFFECT ENCHANTMENT</div><br>Adds up to <div style="color:#ffffff;display:inline;">434</div> Maximum Magicka.<br>Adds up to <div style="color:#ffffff;display:inline;">477</div> Maximum Health.<br>Adds up to <div style="color:#ffffff;display:inline;">434</div> Maximum Stamina.</div>
+		<div id="esoil_itemtraitblock"><img src="//esolog-static.uesp.net/resources/transmute_icon.png" class="esoil_transmute_icon"><div class="esoil_white esoil_small">DIVINES</div><br>Increases Mundus Stone effects by <div class="esoil_white">9.1</div>%.</div>
+		<div id="esoil_itemsetblock"><div class="esoil_white esoil_small">PART OF THE BLOODSPAWN SET (2/2 ITEMS)</div><br>(1 item) Adds <div class="esoil_white">129</div> Stamina Recovery<br>(2 items) When you take damage, you have a <div style="color:#ffffff; display:inline;">6</div>% chance to generate <div style="color:#ffffff;display:inline;">13</div> Ultimate and increase your Physical and Spell Resistance by <div style="color:#ffffff;display:inline;">3731</div> for <div style="color:#ffffff;display:inline;">5</div> seconds. This effect can occur once every <div style="color:#ffffff;display:inline;">5</div> seconds.</div>
+		<div id="esoil_itemdyestampblock"></div>
+		<div id="esoil_itemdesc" class=""></div>
+		<div id="esoil_itemtags"></div>
+		<div id="esoil_itemcraftedblock"></div>
+		<div id="esoil_itemnewvalueblock" style="display:inline-block"></div>
+	</div>
 </div>
-<div class="set-tooltip-seperator"></div>
-<span><strong>ArmorSet bonus</strong><br>
-(2 items) Adds <span class="stamina">1096 Maximum Stamina</span><br>
-(3 items) Adds <span class="stamina">1096 Maximum Stamina</span><br>
-(4 items) Adds <span class="health">1206 Maximum Health</span><br>
-(5 items) Adds <span class="health">1710 Maximum Health</span>, While you are Bracing, you and group members within 12 meters of you gain <a href="https://eso-hub.com/en/buffs-debuffs/minor-evasion"><span class="buff">Minor Evasion</span></a>, reducing damage from area attacks by 10%.<br>
-</span>
+</div> alt="Popup Image">
 </div>
+
+<script>
+  function toggleImage() {
+    var popup = document.querySelector('.popup');
+    popup.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
