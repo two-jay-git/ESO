@@ -3,48 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - My Website</title>
+  <title>Contact Us</title>
   <style>
     /* CSS for basic styling (same as previous code) */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-    }
-    header, nav, section, footer {
       padding: 20px;
-      background-color: #f0f0f0;
-      margin-bottom: 10px;
     }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    h1 {
+      text-align: center;
     }
-    nav ul li {
-      display: inline;
-      margin-right: 10px;
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
-    nav ul li a {
+    .card {
+      width: 300px; /* Fixed width for each card */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px; /* Adjust margin as needed */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    .card p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .card a {
+      display: block;
+      margin-top: 10px;
       text-decoration: none;
-      color: #333;
+      color: #007bff;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Contact Us</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+
+<h1>Contact Us for More Info</h1>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
   <section>
-    <h2>Contact Information</h2>
-    <p>This is the contact page.</p>
+    <h2>Contact Us</h2>
+    <p>This is the Contact Page.</p>
   </section>
   <footer>
     <p>&copy; 2024 My Website</p>
